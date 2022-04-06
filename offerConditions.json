@@ -1,0 +1,662 @@
+[
+  {
+    "Type": "ElapsedTimeQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "OpenedWindowsQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "WindowClosedQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "AutoCheckQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "IsAllBundleStatusQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "IsAnyBundleStatusQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "IsInternetConnectionChangedQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "IsSpecificBundlesCachedQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "IsWindowCloseTriggeredQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "ActiveOnceCondition",
+    "Parameters": [
+      {
+        "Id": "targetOfferUid",
+        "Name": "TargetOfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "AllLastCreatureFromRarityBuiltCondition",
+    "Parameters": [
+      {
+        "IsMultiple": true,
+        "Options": "PieceTypeRarity",
+        "Id": "targetRarity",
+        "Name": "PieceTypeRarity",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "BlockedFogsEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "amount",
+        "Name": "Amount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "BuyTimesLessCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      },
+      {
+        "Id": "maxBuyTimes",
+        "Name": "MaxBuyTimes",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "BuyTimesLessOrTimeAfterOfferCompleteExpiredCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      },
+      {
+        "Id": "maxBuyTimes",
+        "Name": "MaxBuyTimes",
+        "Type": "number"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "CheckCharacterAlmostMergedCondition",
+    "Parameters": [
+      {
+        "Id": "targetCharacterId",
+        "Name": "TargetCharacterId",
+        "Type": "number"
+      },
+      {
+        "Id": "amountOnBoard",
+        "Name": "AmountOnBoard",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "CheckCurrentFieldCondition",
+    "Parameters": [
+      {
+        "Type": "HashSet`1"
+      },
+      {
+        "Type": "HashSet`1"
+      }
+    ]
+  },
+  {
+    "Type": "CheckMergeCharacterPieceCondition",
+    "Parameters": [
+      {
+        "Id": "targetCharacterId",
+        "Name": "TargetCharacterId",
+        "Type": "number"
+      },
+      {
+        "Id": "targetAmountOnBoard",
+        "Name": "TargetAmountOnBoard",
+        "Type": "number"
+      },
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "CheckPieceBuiltOnCurrentFieldCondition",
+    "Parameters": [
+      {
+        "Id": "targetPieceId",
+        "Name": "TargetPieceId",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ClearedFogsEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "amount",
+        "Name": "Amount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "CornucopiaStorageDamageEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "targetDamage",
+        "Name": "TargetDamage",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "CreatureMatchesCountEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "IsMultiple": true,
+        "Options": "PieceTypeRarity",
+        "Id": "targetRarity",
+        "Name": "TargetRarity",
+        "Type": "select"
+      },
+      {
+        "Id": "targetCount",
+        "Name": "TargetCount",
+        "Type": "number"
+      },
+      {
+        "Id": "minZooLevel",
+        "Name": "MinZooLevel",
+        "Type": "number"
+      },
+      {
+        "Id": "MatchesCounter",
+        "Name": "MatchesCounter",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "CurrencyEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "currency",
+        "Name": "Currency",
+        "Type": "string"
+      },
+      {
+        "Id": "amount",
+        "Name": "Amount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "EndlessOfferCondition",
+    "Parameters": []
+  },
+  {
+    "Type": "EnergyLessWithOpenStoreCondition",
+    "Parameters": [
+      {
+        "Id": "minEnergyCount",
+        "Name": "MinEnergyCount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventHaveEnoughTimeCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventInStateOrCompleteCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "IsMultiple": false,
+        "Options": "EventGameState",
+        "Id": "targetState",
+        "Name": "TargetState",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventIsLocalCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventIsNotLocalCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventNotInStateCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "IsMultiple": false,
+        "Options": "EventGameState",
+        "Id": "targetState",
+        "Name": "TargetState",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventSpendLessTimeCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventSpendMoreTimeCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveEventStepEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      },
+      {
+        "IsMultiple": false,
+        "Options": "EventGroup",
+        "Id": "targetEventGroup",
+        "Name": "TargetEventGroup",
+        "Type": "select"
+      },
+      {
+        "Id": "targetStep",
+        "Name": "TargetStep",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ActiveSubmarineUnderWaterCondition",
+    "Parameters": [
+      {
+        "Id": "triggerForInvalidSubmarine",
+        "Name": "TriggerForInvalidSubmarine",
+        "Type": "boolean"
+      }
+    ]
+  },
+  {
+    "Type": "EventEndedCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "EventNotEndedCondition",
+    "Parameters": [
+      {
+        "IsMultiple": false,
+        "Options": "EventGameType",
+        "Id": "targetEventGameType",
+        "Name": "TargetEventGameType",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "FreeWorkersCountEqualsCondition",
+    "Parameters": [
+      {
+        "Id": "targetCount",
+        "Name": "TargetCount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "LevelEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "targetLevel",
+        "Name": "TargetLevel",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "ManaBalanceLessThenNextFogPriceCondition",
+    "Parameters": []
+  },
+  {
+    "Type": "NotAllLastCreatureFromRarityBuiltCondition",
+    "Parameters": [
+      {
+        "IsMultiple": true,
+        "Options": "PieceTypeRarity",
+        "Id": "targetRarity",
+        "Name": "PieceTypeRarity",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "OfferNotExistCondition",
+    "Parameters": [
+      {
+        "Type": "HashSet`1"
+      }
+    ]
+  },
+  {
+    "Type": "OfferBoughtCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "OfferCompletedButNotBoughtCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "OfferCompletedCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "OfferNotCompletedCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      }
+    ]
+  },
+  {
+    "Type": "PieceNotExistOnBoardOrAirshipCondition",
+    "Parameters": [
+      {
+        "Id": "targetPieceId",
+        "Name": "TargetPieceId",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "PlayerMatcheEffectivenessInsideRangeCondition",
+    "Parameters": [
+      {
+        "Id": "minPercentValue",
+        "Name": "MinPercentValue",
+        "Type": "number"
+      },
+      {
+        "Id": "maxPercentValue",
+        "Name": "MaxPercentValue",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "QuestFinishedOrStateEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "targetQuestId",
+        "Name": "TargetQuestId",
+        "Type": "string"
+      },
+      {
+        "IsMultiple": false,
+        "Options": "TaskState",
+        "Id": "targetQuestState",
+        "Name": "TargetQuestState",
+        "Type": "select"
+      }
+    ]
+  },
+  {
+    "Type": "TimeAfterOfferActiveExpiredCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "TimeAfterOfferCompleteExpiredAndCreatureMatchesCountEqualsOrMoreCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      },
+      {
+        "IsMultiple": true,
+        "Options": "PieceTypeRarity",
+        "Id": "targetRarity",
+        "Name": "TargetRarity",
+        "Type": "select"
+      },
+      {
+        "Id": "targetCount",
+        "Name": "TargetCount",
+        "Type": "number"
+      },
+      {
+        "Id": "minZooLevel",
+        "Name": "MinZooLevel",
+        "Type": "number"
+      },
+      {
+        "Id": "MatchesCounter",
+        "Name": "MatchesCounter",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "TimeAfterOfferCompleteExpiredCondition",
+    "Parameters": [
+      {
+        "Id": "offerUid",
+        "Name": "OfferUid",
+        "Type": "string"
+      },
+      {
+        "Id": "seconds",
+        "Name": "Seconds",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "TimePastCondition",
+    "Parameters": [
+      {
+        "Type": "Int64"
+      }
+    ]
+  },
+  {
+    "Type": "AllTutorialsInStateCondition",
+    "Parameters": [
+      {
+        "Type": "TutorialName[]"
+      },
+      {
+        "IsMultiple": false,
+        "Options": "TutorialState",
+        "Id": "targetState",
+        "Name": "TutorialState",
+        "Type": "select"
+      },
+      {
+        "Type": "Int32[]"
+      }
+    ]
+  },
+  {
+    "Type": "TutorialsStepCondition",
+    "Parameters": [
+      {
+        "Type": "Dictionary`2"
+      }
+    ]
+  },
+  {
+    "Type": "UnlockedByPathPieceExistOnBoardCountEqualsCondition",
+    "Parameters": [
+      {
+        "Id": "targetPieceId",
+        "Name": "TargetPieceId",
+        "Type": "number"
+      },
+      {
+        "Id": "targetCount",
+        "Name": "TargetCount",
+        "Type": "number"
+      }
+    ]
+  },
+  {
+    "Type": "WorkerExtraBuyNowCondition",
+    "Parameters": []
+  },
+  {
+    "Type": "NoBoardAnimationInProgressQueueConditionComponent",
+    "Parameters": []
+  },
+  {
+    "Type": "NoMatchInProgressQueueConditionComponent",
+    "Parameters": []
+  }
+]
