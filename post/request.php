@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://reqbin.com/echo/post/json";
+$url = "https://malvislight-github-io.vercel.app/post";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
