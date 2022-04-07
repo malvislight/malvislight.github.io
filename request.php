@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://malvislight-github-io.vercel.app/post";
+$url = "https://malvislight-github-io.vercel.app";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
